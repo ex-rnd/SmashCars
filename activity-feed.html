@@ -1,0 +1,273 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Activity Feed | SocStrap</title>
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/theme.css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+    
+	<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="index.html" class="navbar-brand"><span>Soc</span>Strap</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbar1">
+      <ul class="nav navbar-nav">
+        <li><a href="activity-feed.html"><i class="fa fa-home"></i></a></li>
+        <li><a href="notifications.html"><i class="fa fa-bell"></i></a></li>
+        <li><a href="messages.html"><i class="fa fa-envelope"></i></a></li>
+        <li><a href="friends.html"><i class="fa fa-user"></i></a></li>
+      </ul>
+      <form class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Username <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">View Profile</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+	<div class="container-fluid">
+  <div class="row">
+  	<!-- left side //-->
+    <div class="col-lg-3">
+    	<div class="sidebar-left">
+	      <div><img src="img/main-avatar.jpg" class="main-avatar"></div>
+<h2><a href="#">John Smith</a></h2>
+<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+<div>
+	<button class="btn btn-primary btn-block"><i class="fa fa-user"></i> Friends</button>
+</div>
+<div>
+	<button class="btn btn-primary btn-block"><i class="fa fa-bell"></i> Notifications</button>
+</div>
+<div>
+	<button class="btn btn-primary btn-block"><i class="fa fa-envelope"></i> Messages</button>
+</div>
+<div>
+	<button class="btn btn-primary btn-block"><i class="fa fa-cog"></i> Edit Profile</button>
+</div>
+	    </div>
+    </div>
+    <!-- content //-->
+    <div class="col-lg-6">
+    	<div class="content-feed">
+    		<!-- post form //-->
+    		<div class="well alternate">
+    			<form>
+    				<div class="form-group">
+    					<input type="text" class="form-control" placeholder="What's Up?">
+    				</div>
+    				<div class="row">
+    					<div class="col-lg-6">
+    						<ul class="list-inline">
+    							<li><a href="#"><i class="fa fa-camera"></i> Media</a></li>
+    							<li><a href="#"><i class="fa fa-map-marker"></i> Location</a></li>
+    						</ul>
+    					</div>
+    					<div class="col-lg-6">
+    						<div class="pull-right">
+    							<button class="btn btn-primary">Post Update</button>
+    						</div>
+    					</div>
+    				</div>
+    			</form>
+    		</div>
+    		<div class="alert alert-info">
+    			<a href="#"><i class="fa fa-arrow-down"></i> View 10 new posts</a>
+    		</div>
+    		<!-- post //-->
+    		<div class="well">
+    			<div class="row">
+    				<div class="col-lg-2">
+		    			<p><img src="img/avatar1.jpg" width="70" height="70" class="avatar"></p>
+		    		</div>
+	    			<div class="col-lg-10">
+	    				<h3><a href="#">Mike Michaels</a></h3>
+	    				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+	    				<div class="feed-meta">
+		    				<ul class="list-inline">
+		    					<li>About 3 minutes ago</li>
+		    					<li><a href="#"><i class="fa fa-reply"></i> Reply</a></li>
+		    					<li><a href="#"><i class="fa fa-heart"></i> Like</a></li>
+		    				</ul>
+		    			</div>
+	    			</div>
+	    		</div>
+    		</div>
+    		<!-- post //-->
+    		<div class="well">
+    			<div class="row">
+    				<div class="col-lg-2">
+		    			<p><img src="img/avatar2.jpg" width="70" height="70" class="avatar"></p>
+		    		</div>
+	    			<div class="col-lg-10">
+	    				<h3><a href="#">John Smith</a></h3>
+	    				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+	    				<div class="feed-meta">
+		    				<ul class="list-inline">
+		    					<li>About 3 minutes ago</li>
+		    					<li><a href="#"><i class="fa fa-reply"></i> Reply</a></li>
+		    					<li><a href="#"><i class="fa fa-heart"></i> Like</a></li>
+		    				</ul>
+		    			</div>
+	    			</div>
+	    		</div>
+    		</div>
+    		<!-- post //-->
+    		<div class="well">
+    			<div class="row">
+    				<div class="col-lg-2">
+		    			<p><img src="img/avatar3.jpg" width="70" height="70" class="avatar"></p>
+		    		</div>
+	    			<div class="col-lg-10">
+	    				<h3><a href="#">Chris Christopher</a></h3>
+	    				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+	    				<div class="feed-meta">
+		    				<ul class="list-inline">
+		    					<li>About 3 minutes ago</li>
+		    					<li><a href="#"><i class="fa fa-reply"></i> Reply</a></li>
+		    					<li><a href="#"><i class="fa fa-heart"></i> Like</a></li>
+		    				</ul>
+		    			</div>
+	    			</div>
+	    		</div>
+    		</div>
+    		<!-- post //-->
+    		<div class="well">
+    			<div class="row">
+    				<div class="col-lg-2">
+		    			<p><img src="img/avatar4.jpg" width="70" height="70" class="avatar"></p>
+		    		</div>
+	    			<div class="col-lg-10">
+	    				<h3><a href="#">Matt Matthews</a></h3>
+	    				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+	    				<div class="feed-meta">
+		    				<ul class="list-inline">
+		    					<li>About 3 minutes ago</li>
+		    					<li><a href="#"><i class="fa fa-reply"></i> Reply</a></li>
+		    					<li><a href="#"><i class="fa fa-heart"></i> Like</a></li>
+		    				</ul>
+		    			</div>
+	    			</div>
+	    		</div>
+    		</div>
+    		<!-- post //-->
+    		<div class="well">
+    			<div class="row">
+    				<div class="col-lg-2">
+		    			<p><img src="img/avatar5.jpg" width="70" height="70" class="avatar"></p>
+		    		</div>
+	    			<div class="col-lg-10">
+	    				<h3><a href="#">John Johnson</a></h3>
+	    				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+	    				<div class="feed-meta">
+		    				<ul class="list-inline">
+		    					<li>About 3 minutes ago</li>
+		    					<li><a href="#"><i class="fa fa-reply"></i> Reply</a></li>
+		    					<li><a href="#"><i class="fa fa-heart"></i> Like</a></li>
+		    				</ul>
+		    			</div>
+	    			</div>
+	    		</div>
+    		</div>
+    		<div class="center">
+    			<p><button class="btn btn-primary">Load More Posts</button></p>
+    		</div>
+    	</div>
+    </div>
+    <!-- right side //-->
+    <div class="col-lg-3">
+    	<div class="sidebar-right">
+	    	<div class="well">
+	<h5>Trends</h5>
+	<div>
+		<p><a href="#">#Trend1</a></p>
+		<p><small>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</small></p>
+	</div>
+	<div>
+		<p><a href="#">#Trend1</a></p>
+		<p><small>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</small></p>
+	</div>
+	<div>
+		<p><a href="#">#Trend1</a></p>
+		<p><small>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</small></p>
+	</div>
+	<div>
+		<p><a href="#">#Trend1</a></p>
+		<p><small>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</small></p>
+	</div>
+</div>
+<div class="well">
+	<h5>Linkage</h5>
+	<ul class="list-unstyled">
+		<li><a href="#">About</a></li>
+		<li><a href="#">Help</a></li>
+		<li><a href="#">Terms</a></li>
+		<li><a href="#">Privacy</a></li>
+		<li><a href="#">Ads</a></li>
+		<li><a href="#">Apps</a></li>
+		<li><a href="#">Jobs</a></li>
+		<li><a href="#">Advertise</a></li>
+		<li><a href="#">Contact</a></li>
+	</ul>
+</div>
+	    </div>
+    </div>
+  </div>
+</div>
+
+	<!-- footer //-->
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="footer">
+				&copy; SocStrap
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+	<!-- javascript //-->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js" type="text/javascript"></script>
+</body>
+</html>

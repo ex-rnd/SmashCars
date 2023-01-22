@@ -1,0 +1,17 @@
+{
+	"index": {
+		"pageTitle": "Home"
+	},
+	"activity-feed": {
+		"pageTitle": "Activity Feed"
+	},
+	"notifications": {
+		"pageTitle": "Notifications"
+	},
+	"messages": {
+		"pageTitle": "Messages"
+	},
+	"friends": {
+		"pageTitle": "Friends"
+	}
+}

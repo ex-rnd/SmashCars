@@ -1,0 +1,82 @@
+//navbar
+.navbar-default {
+	background-color: @inverse-background;
+	border-color: transparent;
+
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+
+// brand 
+.navbar-default .navbar-brand {
+	font-weight: 300;
+	color: @inverse-text;
+}
+
+.navbar-default .navbar-brand:focus, 
+.navbar-default .navbar-brand:hover {
+	color: @aqua1;
+}
+
+.navbar-brand span {
+	font-weight: 700;
+	color: @aqua1;
+}
+
+// navbar links
+.navbar-default .navbar-nav > li > a {
+	color: @aqua1;
+}
+
+.navbar-default .navbar-nav > li > a:focus, 
+.navbar-default .navbar-nav > li > a:hover {
+	color: @inverse-text;
+}
+
+// dropdown trigger
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:focus, 
+.navbar-default .navbar-nav > .open > a:hover {
+	color: @inverse-text;
+	background-color: @navy2;
+}
+
+// dropdown
+.dropdown-menu > li > a {
+	color: @primary-link-color;
+}
+
+.dropdown-menu > li > a:focus, 
+.dropdown-menu > li > a:hover {
+	color: @primary-link-color-hover;
+	background-color: @secondary-background;
+}
+
+// search form 
+.navbar-form .form-control {
+	border-color: @navy1;
+}
+
+.form-control:focus {
+	border-color: @border-focus;
+}
+
+// mobile trigger
+.navbar-default .navbar-toggle {
+	border-color: @white;
+}
+
+.navbar-toggle {
+	background: @navy2;
+	border: none;
+	.round-corners;
+}
+
+.navbar-default .navbar-toggle:focus, 
+.navbar-default .navbar-toggle:hover {
+	background-color: @aqua1;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: @white;
+}

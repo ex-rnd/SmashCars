@@ -1,0 +1,184 @@
+/* CONTENTS
+/////////////////////////////////////
+*/
+// 00. LESS
+/*
+01. BASE
+02. LAYOUT
+03. MODULES
+04. STATE
+
+This stylesheet is a starting place. Include your own Base, Layout
+Modules, and State styles below.
+
+This style sheet organization is based on the SMACCS system. 
+Please visit the following website for more info: http://smacss.com/
+*/
+
+// Load LESS Library 
+@import "components/_variables";
+
+/****************************
+/////////////////////////////
+
+01. BASE
+
+All base HTML tags that require styling
+
+/////////////////////////////
+****************************/
+
+body {
+  background: @primary-background;
+  font-family: @body-copy;
+  font-size: @base-font-size;
+  line-height: @base-line-height;
+  color: @primary-text; 
+}
+
+
+a, a:link, a:visited {
+	color: @primary-link-color;
+}
+
+a:hover {
+	color: @primary-link-color-hover;
+	text-decoration: underline;
+}
+
+p {
+	margin-bottom: (@margin + 0.5);
+}
+
+/***************************
+////////////////////////////
+
+02. LAYOUT
+
+Styles specific to your layout or website
+
+////////////////////////////
+***************************/
+
+.sidebar-left h2 {
+	margin-top: (@margin * 1.5);
+	margin-bottom: (@margin * 1.5);
+	line-height: 0;
+}
+
+.sidebar-left li {
+	margin-bottom: (@margin - 0.5);
+}
+
+.sidebar-left li i {
+	margin-right: 5px;
+}
+
+.sidebar-left div > button {
+	margin-bottom: (@margin - 0.5);
+	text-align: left;
+}
+
+img.main-avatar {
+	width: 100%;
+	height: auto;
+
+	.round-corners;
+}
+
+.content-feed h3 {
+	margin-top: 0;
+	margin-bottom: (@margin - 0.5);
+}
+
+img.avatar {
+	.round-corners;
+}
+
+.feed-meta {
+	font-size: (@font-size - 0.25);
+}
+
+.feed-meta ul {
+	margin-bottom: 0;
+}
+
+.sidebar-right .well div {
+	margin-bottom: @margin;
+}
+
+.sidebar-right .well div p {
+	margin-bottom: 0;
+}
+
+.sidebar-right h5 {
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: (@margin * 1.5);
+	color: @heading-text;
+}
+
+.footer {
+	margin-top: (@padding * 6);
+	padding-bottom: (@padding * 6);
+	padding-top: @padding;
+	border-top: @border-size @border-color @border-type;
+	color: @grey;
+}
+
+/***************************
+////////////////////////////
+
+03. MODULES
+
+Reusable classes or components
+
+////////////////////////////
+***************************/
+
+@import "components/_alert.less";
+
+@import "components/_buttons.less";
+
+@import "components/_navbar.less";
+
+@import "components/_typography.less";
+
+@import "components/_well.less";
+
+
+/***************************
+////////////////////////////
+
+04. STATES
+
+////////////////////////////
+***************************/
+
+/***************************
+////////////////////////////
+
+05. MOBILE
+
+////////////////////////////
+***************************/
+
+@media (max-width: 767px) {
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+		color: @primary-link-color;
+	}
+
+	.navbar-default .navbar-nav .open .dropdown-menu > li >a:focus, 
+	.navbar-default .navbar-nav .open .dropdown-menu > li >a:hover {
+		color: @white;
+	}
+
+	img.avatar {
+		margin-bottom: (@margin + 0.5);
+	}
+
+	.page-header {
+		margin-top: @margin;
+	}
+}
+
